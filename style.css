@@ -1,0 +1,82 @@
+:root {
+    --color-white: #f7f2f2;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #39b639;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body ::before {
+    content: '';
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to right, rgba(27, 27, 110, 0.8), rgb(52, 126, 124)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    color: var(--color-white);
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+.container {
+    /* background-color: red; */
+    width: 50%;
+    margin: auto;
+    font-size: large;
+}
+
+header {
+    /* background-color: gray; */
+    text-align: center;
+    margin-top: 3rem;
+    
+  }
+
+#description {
+    background-color: black;
+    line-height: 0;
+    letter-spacing: 1px;
+    margin-bottom: 2.25rem;
+}
+
+form {
+    background: var(--color-darkblue);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.form-element {
+    display: flex;
+    margin: 1.175rem;
+    flex-direction: column;
+}
+
+input, select, textarea,button, checkbox {
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button{
+    background-color: var(--color-green);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 15px;
+    }
+
+a{
+    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+}
